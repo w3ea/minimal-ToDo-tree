@@ -41,6 +41,7 @@ const Input = memo(({item, parentId, isRoot, isFirstChild}) => {
         }
         
         if (isWindows() && event.ctrlKey && event.shiftKey && event.key === 'Delete') {
+            event.preventDefault();
             dispatch(deleteTask(item));
         }
     }, []);
