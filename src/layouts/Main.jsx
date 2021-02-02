@@ -12,7 +12,7 @@ const Main = ({children}) => {
             </main>
             
             <footer className='bg-gray-600'>
-                <div className='h-2'/>
+                <div className='h-2.5'/>
             </footer>
         </section>
     );

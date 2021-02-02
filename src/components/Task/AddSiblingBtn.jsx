@@ -7,7 +7,7 @@ const AddSiblingBtn = ({id, parentId, isRoot}) => {
     
     return (
         <button
-            className={cls('absolute bottom-0 left-0 ml-6 mb-3 opacity-0 transition-opacity duration-200 hover:opacity-100', {'-ml-.5': isRoot})}
+            className={cls('absolute bottom-0 left-0 ml-6 mb-3 opacity-0 transition-opacity duration-200 hover:opacity-100 focus:outline-none', {'-ml-.5': isRoot})}
             onClick={() => dispatch(addSiblingTask(id, parentId))}
         >
             <svg className='w-5' viewBox='0 0 20 20'>

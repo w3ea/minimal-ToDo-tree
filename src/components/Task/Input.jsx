@@ -47,7 +47,7 @@ const Input = memo(({item, parentId, isRoot, isFirstChild}) => {
     }, []);
     
     return (
-        <div className='flex-1 flex items-center space-x-2'>
+        <div className='flex-1 flex items-center space-x-1 md:space-x-2'>
             <svg tabIndex={-1} className='w-4.25 text-gray-600' viewBox='0 0 18 18' fill='currentColor'>
                 <circle cx='9' cy='9' r='3.5'/>
             </svg>

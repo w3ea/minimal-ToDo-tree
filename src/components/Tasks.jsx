@@ -24,7 +24,7 @@ const Tasks = () => {
     //endregion
     
     return (
-        <>
+        <div className='overflow-x-auto pb-10 mb-5'>
             {getChildItems(toDoList.root, toDoList.tasks).map((item, index) => (
                 <Task
                     key={item.id}
@@ -35,16 +35,16 @@ const Tasks = () => {
             ))}
         
             <button
-                className='-ml-.5 mt-2 pb-20 focus:outline-none'
+                className='-ml-.5 mt-2 focus:outline-none'
                 onClick={() => dispatch(addTask())}
             >
                 <svg className='w-5' viewBox='0 0 20 20'>
-                    <circle className='text-transparent transition-colors duration-200 hover:text-gray-200' cx='10.5' cy='10.5' r='9' fill='currentColor'/>
+                    <circle className='text-gray-200' cx='10.5' cy='10.5' r='9' fill='currentColor'/>
                     <line x1='6' y1='10.5' x2='15' y2='10.5' stroke='#868c90' strokeWidth='1'/>
                     <line x1='10.5' y1='6' x2='10.5' y2='15' stroke='#868c90' strokeWidth='1'/>
                 </svg>
             </button>
-        </>
+        </div>
     );
 };
 

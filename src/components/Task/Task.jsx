@@ -12,9 +12,9 @@ const Task = memo(({item, isRoot, isFirstChild, parentId = 0}) => {
     const [showActions, setShowActions] = useState(false);
     
     return (
-        <div className={cls('relative', {'border-l border-gray-200 border-solid pl-6.5 ml-2': !isRoot})}>
+        <div className={cls('relative', {'border-l border-gray-200 border-solid pl-4.5 md:pl-6.5 ml-2': !isRoot})}>
             <div
-                className='flex items-center space-x-5 py-2'
+                className='flex items-center space-x-2 md:space-x-5 py-2'
                 onFocus={() => setShowActions(true)}
                 onBlur={() => setShowActions(false)}
             >
